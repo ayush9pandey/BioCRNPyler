@@ -21,9 +21,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Topic :: Software Development',
         'Topic :: Scientific/Engineering',
-        'Operating System :: POSIX',
-        'Operating System :: Unix'
-        'Operating System :: MacOS'
+        'Operating System :: OS Independent'
     ],
     install_requires=[
           'python-libsbml',
