@@ -17,7 +17,7 @@ class BasicCatalysis(Mechanism):
     The catalytic reaction is given by
 
     .. math::
-        S + C \rightarrow P + C
+        S + C \\rightarrow P + C
 
     where S is the substrate, C is the catalyst (enzyme), and P is the
     product.
@@ -184,16 +184,16 @@ class BasicProduction(Mechanism):
 
     A 'catalysis' mechanism where a catalyst (enzyme) produces a product.
     Optionally, a substrate can be consumed during production, allowing for
-    both pure production (:math:`C \rightarrow P + C`) and production with substrate
-    consumption (:math:`S + C \rightarrow P + C`).
+    both pure production (:math:`C \\rightarrow P + C`) and production with substrate
+    consumption (:math:`S + C \\rightarrow P + C`).
 
     The production reaction can be either:
 
-    :math:`C \rightarrow P + C` (pure production, no substrate)
+    :math:`C \\rightarrow P + C` (pure production, no substrate)
 
     or
 
-    :math:`S + C \rightarrow P + C` (production with substrate consumption)
+    :math:`S + C \\rightarrow P + C` (production with substrate consumption)
 
     where S is the substrate, C is the catalyst (enzyme), and P is the
     product.
@@ -384,7 +384,7 @@ class MichaelisMenten(Mechanism):
     The reaction scheme is
 
     .. math::
-        S + E \leftrightarrow S:E \rightarrow E + P
+        S + E \leftrightarrow S:E \\rightarrow E + P
 
     where S is the substrate, E is the enzyme, S:E is the enzyme-substrate
     complex, and P is the product.
@@ -415,7 +415,7 @@ class MichaelisMenten(Mechanism):
     This mechanism generates two mass-action reactions:
 
     1. Reversible binding: :math:`S + E \leftrightarrow S:E` (rates 'kb' and 'ku')
-    2. Irreversible catalysis: :math:`S:E \rightarrow E + P` (rate 'kcat')
+    2. Irreversible catalysis: :math:`S:E \\rightarrow E + P` (rate 'kcat')
 
     Common applications include:
 
@@ -431,7 +431,7 @@ class MichaelisMenten(Mechanism):
     - 'kcat' : Catalytic rate constant for product formation
 
     The mechanism can also model degradation reactions by setting product
-    to None, resulting in: :math:`S + E \leftrightarrow S:E \rightarrow E`.
+    to None, resulting in: :math:`S + E \leftrightarrow S:E \\rightarrow E`.
 
     Examples
     --------
@@ -571,11 +571,11 @@ class MichaelisMenten(Mechanism):
         The mechanism generates the following reactions:
 
         1. :math:`S + E \leftrightarrow S:E` (binding, rates 'kb' and 'ku')
-        2. :math:`S:E \rightarrow E + P` (catalysis, rate 'kcat')
+        2. :math:`S:E \\rightarrow E + P` (catalysis, rate 'kcat')
 
         For degradation (product is None):
 
-        2. :math:`S:E \rightarrow E` (degradation, rate 'kcat')
+        2. :math:`S:E \\rightarrow E` (degradation, rate 'kcat')
 
         """
         # Get parameters
@@ -922,7 +922,7 @@ class MichaelisMentenCopy(Mechanism):
 
     The reaction scheme is
     .. math::
-        S + E \leftrightarrow S:E \rightarrow S + E + P
+        S + E \leftrightarrow S:E \\rightarrow S + E + P
 
     where S is the substrate (template), E is the enzyme, S:E is the
     enzyme-substrate complex, and P is the product.
@@ -1109,7 +1109,7 @@ class MichaelisMentenCopy(Mechanism):
         The mechanism generates the following reactions:
 
         1. :math:`S + E \leftrightarrow S:E` (binding, rates 'kb' and 'ku')
-        2. :math:`S:E \rightarrow S + E + P` (copying, rate 'kcat')
+        2. :math:`S:E \\rightarrow S + E + P` (copying, rate 'kcat')
 
         The key feature is that the substrate appears on both sides of the
         catalytic reaction, ensuring it is not consumed. This makes the
