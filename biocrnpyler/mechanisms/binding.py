@@ -19,7 +19,7 @@ class One_Step_Cooperative_Binding(Mechanism):
     The binding reaction is given by
 
     $$
-        n*A + B \leftrightarrow A_n:B
+        n A + B \leftrightarrow A_n:B
     $$
 
     where $n$ is the cooperativity (number of binders).
