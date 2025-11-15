@@ -869,10 +869,7 @@ class NegativeHillTranscription(Mechanism):
         G \rightarrow G + T
     $$
 
-    with rate:
-    $$
-        \text{rate} = k * G * \frac{1}{K + R^n}
-    $$
+    with rate: $\\text{rate} = k * G * \frac{1}{K + R^n}$
 
     where R is the regulator (repressor), n is the Hill coefficient, and K
     is the repression constant. Optionally includes a basal leak reaction at
