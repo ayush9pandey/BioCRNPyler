@@ -116,13 +116,22 @@ default_role = 'py:obj'
 
 # Align inline math with text
 # imgmath_use_preview = True
-mathjax3_config = {
-    "tex": {
-        "inlineMath": [["\\(", "\\)"], ["$", "$"]],
-        "displayMath": [["\\[", "\\]"], ["$$", "$$"]],
-    }
+
+extensions = ['sphinx_math_dollar', 'sphinx.ext.mathjax']
+
+mathjax_config = {
+    'tex2jax': {
+        'inlineMath': [ ["\\(","\\)"] ],
+        'displayMath': [["\\[","\\]"] ],
+    },
 }
 
+mathjax3_config = {
+  "tex": {
+    "inlineMath": [['\\(', '\\)']],
+    "displayMath": [["\\[", "\\]"]],
+  }
+}
 
 # Skip prompts when using copy button
 copybutton_prompt_text = r'>>> |\.\.\. '
