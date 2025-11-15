@@ -23,7 +23,7 @@ class OneStepGeneExpression(Mechanism):
     The reaction follows the schema:
 
     .. math::
-        G \\rightarrow G + P
+        G \rightarrow G + P
 
     where G is the gene (DNA) and P is the protein product.
 
@@ -212,7 +212,7 @@ class SimpleTranscription(Mechanism):
     The reaction follows the schema:
 
     .. math::
-        G \\rightarrow G + T
+        G \rightarrow G + T
 
     where G is the gene (DNA) and T is the transcript (mRNA).
 
@@ -417,7 +417,7 @@ class SimpleTranslation(Mechanism):
     The reaction follows the schema:
 
     .. math::
-        T \\rightarrow T + P
+        T \rightarrow T + P
 
     where T is the transcript (mRNA) and P is the protein.
 
@@ -610,7 +610,7 @@ class PositiveHillTranscription(Mechanism):
     The reaction follows the schema:
 
     .. math::
-        G \\rightarrow G + T
+        G \rightarrow G + T
 
     with rate:
 
@@ -861,7 +861,7 @@ class NegativeHillTranscription(Mechanism):
     The reaction follows the schema:
     
     .. math::
-        G \\rightarrow G + T
+        G \rightarrow G + T
 
     with rate:
     .. math::
